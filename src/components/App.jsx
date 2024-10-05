@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import Section from './Section';
+import Section from './Section'; // Імпорт вашого компонента
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 
@@ -23,7 +22,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <Section title="Please leave feedback">
+      <Section 
+        title="Sip Happens Café" 
+        subtitle="Please leave your feedback about our service by selecting one of the options below" // Передаємо підзаголовок
+      >
         <FeedbackOptions
           onClick={this.onClick}
           feedbackOptions={this.state}
